@@ -6,6 +6,7 @@
     "activation": "data/tensors/activation.json",
     "scale": "data/tensors/scale.json",
     "upstream_a": "data/tensors/upstream_a.json",
-    "upstream_b": "data/tensors/upstream_b.json"
+    "upstream_b": "data/tensors/upstream_b.json",
+    "narrow_activation": "data/tensors/narrow_activation.json"
   }
 }

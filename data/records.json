@@ -115,5 +115,15 @@
     4,
     5
   ],
-  "seed": 591
+  "seed": 591,
+  "activation_sets": [
+    {
+      "id": "wide",
+      "tensor": "activation"
+    },
+    {
+      "id": "narrow",
+      "tensor": "narrow_activation"
+    }
+  ]
 }
