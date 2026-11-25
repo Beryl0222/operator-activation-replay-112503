@@ -1,0 +1,38 @@
+{
+  "id": "large-activation",
+  "parameters": {
+    "sample_id": "activation-large",
+    "bits": 4,
+    "zero_point": 8
+  },
+  "arrays": {
+    "activation": {
+      "shape": [
+        16384,
+        64
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": -0.5,
+      "high": 0.5
+    },
+    "scale": {
+      "shape": [
+        64
+      ],
+      "pattern": "constant",
+      "dtype": "float32",
+      "value": 0.125
+    },
+    "upstream": {
+      "shape": [
+        16384,
+        64
+      ],
+      "pattern": "uniform",
+      "dtype": "float32",
+      "low": -1,
+      "high": 1
+    }
+  }
+}
