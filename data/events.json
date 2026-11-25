@@ -1,0 +1,66 @@
+[
+  {
+    "id": "shared-lifetime",
+    "events": [
+      {
+        "kind": "encode",
+        "activation_id": "act-1",
+        "consumers": [
+          "branch-a",
+          "branch-b"
+        ],
+        "scale_revision": "sc1"
+      },
+      {
+        "kind": "backward",
+        "consumer": "branch-a"
+      },
+      {
+        "kind": "cancel_window",
+        "window_id": "w1"
+      },
+      {
+        "kind": "backward",
+        "consumer": "branch-b"
+      }
+    ]
+  },
+  {
+    "id": "restore-new-scale",
+    "events": [
+      {
+        "kind": "commit",
+        "window_id": "w2"
+      },
+      {
+        "kind": "checkpoint"
+      },
+      {
+        "kind": "reorder",
+        "rows": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": "change_scale",
+        "revision": "sc2",
+        "factor": 0.75
+      },
+      {
+        "kind": "restore",
+        "scale_revision": "sc1"
+      }
+    ]
+  }
+]

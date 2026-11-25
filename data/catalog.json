@@ -1,0 +1,11 @@
+{
+  "product": "训练激活的低比特压缩与可重放反向",
+  "provenance": "所有数值、实体和事件均为本地合成资料，不代表真实用户或已发生事故。",
+  "format_revision": 1,
+  "tensors": {
+    "activation": "data/tensors/activation.json",
+    "scale": "data/tensors/scale.json",
+    "upstream_a": "data/tensors/upstream_a.json",
+    "upstream_b": "data/tensors/upstream_b.json"
+  }
+}

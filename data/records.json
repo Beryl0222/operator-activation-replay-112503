@@ -1,0 +1,119 @@
+{
+  "tokens": [
+    {
+      "row": 0,
+      "sample_id": "s-a",
+      "logical_position": 0,
+      "valid": true
+    },
+    {
+      "row": 1,
+      "sample_id": "s-a",
+      "logical_position": 1,
+      "valid": true
+    },
+    {
+      "row": 2,
+      "sample_id": "s-a",
+      "logical_position": 2,
+      "valid": true
+    },
+    {
+      "row": 3,
+      "sample_id": "s-a",
+      "logical_position": 3,
+      "valid": true
+    },
+    {
+      "row": 4,
+      "sample_id": "s-a",
+      "logical_position": 4,
+      "valid": true
+    },
+    {
+      "row": 5,
+      "sample_id": "s-a",
+      "logical_position": 5,
+      "valid": false
+    },
+    {
+      "row": 6,
+      "sample_id": "s-b",
+      "logical_position": 0,
+      "valid": true
+    },
+    {
+      "row": 7,
+      "sample_id": "s-b",
+      "logical_position": 1,
+      "valid": true
+    },
+    {
+      "row": 8,
+      "sample_id": "s-b",
+      "logical_position": 2,
+      "valid": true
+    },
+    {
+      "row": 9,
+      "sample_id": "s-b",
+      "logical_position": 3,
+      "valid": true
+    },
+    {
+      "row": 10,
+      "sample_id": "s-b",
+      "logical_position": 4,
+      "valid": true
+    },
+    {
+      "row": 11,
+      "sample_id": "s-b",
+      "logical_position": 5,
+      "valid": false
+    }
+  ],
+  "node_ids": [
+    "pre-ffn",
+    "pre-attn"
+  ],
+  "zero_points": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "scale_revisions": [
+    "sc1",
+    "sc2"
+  ],
+  "consumers": [
+    "branch-a",
+    "branch-b"
+  ],
+  "bits": [
+    4,
+    8
+  ],
+  "error_limits": {
+    "max_abs": 0.65,
+    "rms": 0.3
+  },
+  "reorder": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seed": 591
+}
